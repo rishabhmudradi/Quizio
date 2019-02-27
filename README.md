@@ -26,11 +26,11 @@ Cupertino High School
 Learning about and competing in FBLA competitions can be very challenging. Often times, the methods of learning about FBLA are simply not immersive enough and tend to lose the students' focus easily. This is the core reason why we created Quizio, an interactive way of both learning and testing ones knowledge. Quizio is an iOS application built specifically to fit a FBLA competitor’s needs. Quizio provides students with study tools essential to ones success ranging from practice quizzes, posts for user questions, personalized learning experience with flash cards, and other resources. Our simple and unique UI ensures users spend their quality time on Quizio gaining aid. Our motto is simple. Knowledge is power. 
 
 # Requirements
-- In order to run Quizio it is recommended to use an iPhone 7 however it will work on an iPhone 6 and iPhone 8
+- In order to run Quizio it is recommended to use an iPhone 7, however it is cross platform and will run on any device lower than the iPhone X (ie:iPhone 8, iPhone6s, and iPhone 6).
 - Device running any iOS above 10.0
 
 # Installation
-- Quizio is not available on the iOS App Store, the user must run application through the Xcode simmulator or personal device.
+- Quizio is not available on the iOS App Store, the user must run application through the Xcode simmulator and personal device.
 
 # Software Used
 We used Xcode 10.1 during development of this iOS application. For the app's icon and a large majority of our user interface, we used Sketch to enhance our colors. Finally, we used Github to store our code online to ensure all members of our team would be able to collaborate on the most updated version of our code.
