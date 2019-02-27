@@ -101,6 +101,14 @@
                                     <action selector="loginAction:" destination="WhZ-f3-oKK" eventType="touchUpInside" id="d2O-eV-Cpa"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naU-9q-Hvy">
+                                <rect key="frame" x="27" y="488" width="144" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aPA-2A-Dn2"/>
@@ -112,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TyS-yo-lKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="15"/>
+            <point key="canvasLocation" x="485.60000000000002" y="14.842578710644679"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="VVI-AY-fxb">
@@ -160,6 +168,13 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountAction:" destination="89g-kP-izF" eventType="touchUpInside" id="o6u-Cx-EZO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULY-FZ-aLh">
+                                <rect key="frame" x="65" y="488" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="help:" destination="89g-kP-izF" eventType="touchUpInside" id="msK-7f-II2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1351,10 +1366,10 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Scf-Ij-1B8"/>
-        <segue reference="dEw-88-kIc"/>
+        <segue reference="OhY-lo-M7c"/>
         <segue reference="cn7-XM-yUT"/>
         <segue reference="sAV-HR-tLV"/>
-        <segue reference="aHF-V5-0UZ"/>
+        <segue reference="3CV-xW-gPy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58644627650000003" green="0.3482493727" blue="0.93961093790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

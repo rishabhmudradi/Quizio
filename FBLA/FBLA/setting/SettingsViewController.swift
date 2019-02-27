@@ -2,8 +2,8 @@
 //  SettingsViewController.swift
 //  FBLA
 //
-//  Created by Rishabh Mudradi on 2/12/19.
-//  Copyright © 2019 Rishabh Mudradi. All rights reserved.
+//  Created by Aryan Kaul on 2/12/19.
+//  Copyright © 2019 Aryan Kaul. All rights reserved.
 //
 
 import UIKit

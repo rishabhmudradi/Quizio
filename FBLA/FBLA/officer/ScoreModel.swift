@@ -2,8 +2,8 @@
 //  ScoreModel.swift
 //  FBLA
 //
-//  Created by Rishabh Mudradi on 1/15/19.
-//  Copyright © 2019 Rishabh Mudradi. All rights reserved.
+//  Created by Amish Gupta on 1/15/19.
+//  Copyright © 2019 Amish Gupta. All rights reserved.
 //
 
 import Foundation

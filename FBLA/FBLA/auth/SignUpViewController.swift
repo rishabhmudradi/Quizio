@@ -44,7 +44,11 @@ class SignUpViewController: UIViewController {
         }
     }
     
-
+    
+    @IBAction func help(_ sender: Any) {
+        let alert  = SCLAlertView().showNotice("Help?", subTitle: "Enter your email and password to create an account for Quizio.")
+    }
+    
     /*
     // MARK: - Navigation
 
