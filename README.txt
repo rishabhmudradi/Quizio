@@ -32,7 +32,8 @@ Knowledge is power.
 
 REQUIREMENTS
 ------------
-  - In order to run Quizio it is recommended to use an iPhone 7 
+  - In order to run Quizio it is recommended to use an iPhone 7, however it is cross platform and will 
+run on any device lower than the iPhone X (ie:iPhone 8, iPhone6s, and iPhone 6).
   - Device running any iOS above 10.0
 
 INSTALLATION
@@ -87,7 +88,7 @@ on any device 6+ or higher, but the user interface will not be as glossy and may
 To run Quizio on a physical iPhone (iPhone 7 reccomended):
 First download the Xcode file project "FBLA". When opened, find and open the Xcode file project 
 titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen
-maximize button. Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is recommended 
+maximize button. Again any iPhone lower than the X will run Quizio adequately. Again an iPhone 7 is recommended 
 but not mandatory. When promoted to select a device scroll and select your device's name. Ensure to accept 
 any prompts that may pop up when running. Additionally if asked to trust the developer, go to Settings and 
 then General. Scroll down to device management and trust the developer to enable permission to run Quizio 
