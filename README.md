@@ -19,7 +19,7 @@ Cupertino High School
 5. [Demo](#demo)
 6. [Sources](#sources)
 7. [Templates](#Templates)
-8. [Instructions](#Instructions for Running Project)
+8. [Instructions for Running Project](#instructions-for-running-project)
 9. [Developers](#Developers)
 
 # Introduction
@@ -60,12 +60,12 @@ No templates were used to develop Quizio.
 # Instructions for Running Project
 To run Quizio on the Apple iOS Simulator:
 
-Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA.xcodeproj". Now click the run button at the top left corner next to green screen maximize button. When prompted for a device type, select iPhone 7 for best performance. Note: Quizio will run on any device 6+ or higher, but the user interface will not be as glossy and may have cut corners.
+Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA.xcworkspace". Now click the run button at the top left corner next to green screen maximize button. When prompted for a device type, select iPhone 7 for best performance. Note: Quizio will run on any device 6+ or higher, but the user interface will not be as glossy and may have cut corners.
 
 
 To run Quizio on a physical iPhone (iPhone 7 reccomended):
 
-First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled "FBLA.xcodeproj". When opened, click the run button at the top left corner next to screen maximize button. Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is reccomended but not mandatory. When promoted to select a device scroll and select your device's name. Ensure to accept any promts that may pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll down to device managment and trust the developer to enable permission to run Quizio on the device. 
+First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen maximize button. Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is reccomended but not mandatory. When promoted to select a device scroll and select your device's name. Ensure to accept any promts that may pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll down to device managment and trust the developer to enable permission to run Quizio on the device. 
 
 # Developers
 Rishabh Mudradi  
