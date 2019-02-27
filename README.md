@@ -64,7 +64,7 @@ Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA
 
 To run Quizio on a physical iPhone (iPhone 7 reccomended):
 
-First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen maximize button. Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is recommended but not mandatory. When promoted to select a device scroll and select your device's name. Ensure to accept any prompts that may pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll down to device management and trust the developer to enable permission to run Quizio on the device. 
+First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen maximize button. Attach your apple device running any iOS 10.0 or higher. Again any iPhone lower than the X will run Quizio adequately. When promoted to select a device scroll and select your device's name. Ensure to accept any prompts that may pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll down to device management and trust the developer to enable permission to run Quizio on the device. 
 
 # Developers
 Rishabh Mudradi  
