@@ -79,18 +79,19 @@ No templates were used to develop Quizio.
 INSTRUCTIONS FOR RUNNING PROJECT
 --------------------------------
 To run Quizio on the Apple iOS Simulator:
-Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA.xcworkspace".
-Now click the run button at the top left corner next to green screen maximize button. When prompted 
-for a device type, select iPhone 7 for best performance. Note: Quizio will run on any device 6+ or 
-higher, but the user interface will not be as glossy and may have cut corners.
+Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA.xcworkspace". 
+Now click the run button at the top left corner next to green screen maximize button. 
+When prompted for a device type, select iPhone 7 for best performance. Note: Quizio will run
+on any device 6+ or higher, but the user interface will not be as glossy and may have cut corners.
 
-To run Quizio on a physical iPhone (iPhone 7 recommended):
-First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled
-"FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen maximize button.
-Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is reccomended but not mandatory.
-When promoted to select a device scroll and select your device's name. Ensure to accept any prompts that may
-pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll 
-down to device managment and trust the developer to enable permission to run Quizio on the device. 
+To run Quizio on a physical iPhone (iPhone 7 reccomended):
+First download the Xcode file project "FBLA". When opened, find and open the Xcode file project 
+titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen
+maximize button. Attach your apple device running any iOS 10.0 or higher. Again an iPhone 7 is recommended 
+but not mandatory. When promoted to select a device scroll and select your device's name. Ensure to accept 
+any prompts that may pop up when running. Additionally if asked to trust the developer, go to Settings and 
+then General. Scroll down to device management and trust the developer to enable permission to run Quizio 
+on the device.
 
 
 DEVELOPERS
