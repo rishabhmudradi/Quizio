@@ -32,7 +32,7 @@ Knowledge is power.
 
 REQUIREMENTS
 ------------
-  - In order to run Quizio it is reccomended to use an iPhone 7 
+  - In order to run Quizio it is recommended to use an iPhone 7 
   - Device running any iOS above 10.0
 
 INSTALLATION
@@ -51,9 +51,9 @@ the most updated version of our code.
 
 SOURCES
 -------
-Since all members of our team had prior experience with iOS development, we did not use many templates. 
-Instead we referred to each other, youtube, or stack overflow for assistance. We also used dribble to get 
-a sense of what a quiz app would look like, and created every piece of our UI from Sketch.
+Since all members of our team had prior experience with iOS development, we did not use many outside 
+sources. Instead we referred to each other, youtube, or stack overflow for assistance. We also used 
+Dribble to get a sense of what a quiz app would look like, and created every piece of our UI from Sketch.
 
 Open-Source Frameworks
   - Custom Alert View (https://github.com/vikmeup/SCLAlertView-Swift)
