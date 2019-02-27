@@ -69,9 +69,12 @@ User Interface
   - All of our user interface was developed in sketch and imported into Xcode for usage.
 
 
+
 TEMPLATES
 ---------
 No templates were used to develop Quizio.
+
+
 
 INSTRUCTIONS FOR RUNNING PROJECT
 --------------------------------
