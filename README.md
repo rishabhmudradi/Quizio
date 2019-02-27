@@ -5,9 +5,7 @@
 ![Swift 3.0.x](https://img.shields.io/badge/Swift-4.0.x-violet.svg)
 
 California
-
 Bay Section FBLA 
-
 Cupertino High School
 
 <img width="364" alt="appview" src="https://user-images.githubusercontent.com/19750920/53470758-6da99580-3a17-11e9-9da7-83e19e964106.png">
