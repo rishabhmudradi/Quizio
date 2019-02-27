@@ -30,7 +30,7 @@ Learning about and competing in FBLA competitions can be very challenging. Often
 - Device running any iOS above 10.0
 
 # Installation
-- Quizio is not available on the iOS App Store, the user must run application through the Xcode simmulator or personal device.
+- Quizio is not available on the iOS App Store, the user must run application through the Xcode simulator or personal device.
 
 # Software Used
 We used Xcode 10.1 during development of this iOS application. For the app's icon and a large majority of our user interface, we used Sketch to enhance our colors. Finally, we used Github to store our code online to ensure all members of our team would be able to collaborate on the most updated version of our code.
