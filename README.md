@@ -12,15 +12,15 @@ Cupertino High School
 
 # Table of Contents
 
-1. [Introduction](#Introduction)
-2. [Requirements](#Requirements)
+1. [Introduction](#introduction)
+2. [Requirements](#requirements)
 3. [Installation](#installation)
-4. [Usage](#usage)
+4. [Software Used](#software-used)
 5. [Demo](#demo)
 6. [Sources](#sources)
-7. [Templates](#Templates)
+7. [Templates](#templates)
 8. [Instructions for Running Project](#instructions-for-running-project)
-9. [Developers](#Developers)
+9. [Developers](#developers)
 
 # Introduction
 Learning about and competing in FBLA competitions can be very challenging. Often times, the methods of learning about FBLA are simply not immersive enough and tend to lose the students' focus easily. This is the core reason why we created Quizio, an interactive way of both learning and testing ones knowledge. Quizio is an iOS application built specifically to fit a FBLA competitor’s needs. Quizio provides students with study tools essential to providing success ranging from practice quizzes, posts for user questions, personalized learning experience with flash cards, and other resources. Our simple, modern, and unique UI ensures users spend their time on Quizio gaining quality aid. Our motto is simple. Knowledge is power. 
@@ -30,7 +30,7 @@ Learning about and competing in FBLA competitions can be very challenging. Often
 - Device running any iOS above 10.0
 
 # Installation
-- Quizio is not available on the iOS App Store, the user must run application through the Xcode simmulator and personal device.
+- Quizio is not available on the iOS App Store, the user must run application through the Xcode simulator and personal device.
 
 # Software Used
 We used Xcode 10.1 during development of this iOS application. For the app's icon and a large majority of our user interface, we used Sketch to enhance our colors. Finally, we used Github to store our code online to ensure all members of our team would be able to collaborate on the most updated version of our code.
@@ -41,17 +41,17 @@ We used Xcode 10.1 during development of this iOS application. For the app's ico
 # Sources
 Since all members of our team had prior experience with iOS development, we did not use many templates. Instead we referred to each other, youtube, or stack overflow for assistance. We also used dribble to get a sense of what a quiz app would look like, and created every piece of our UI from Sketch.
 
-Open-Source Frameworks
+## Open-Source Frameworks
 - Custom Alert View (https://github.com/vikmeup/SCLAlertView-Swift)
 - Carousel View Layout (https://github.com/ink-spot/UPCarouselFlowLayout)
 
-SDKs
+## SDKs
 - Firebase iOS SDK (https://firebase.google.com/docs/ios/setup)
 
-Other Assets
-- Icons were provided from FlatIcoin (https://www.flaticon.com)
+## Other Assets
+- Icons were provided from FlatIcon (https://www.flaticon.com)
 
-User Interface
+## User Interface
 - All of our user interface was developed in sketch and imported into Xcode for usage.
 
 # Templates
@@ -62,7 +62,7 @@ To run Quizio on the Apple iOS Simulator:
 
 Open the Xcode Project titled "FBLA". Once inside open the project labeled "FBLA.xcworkspace". Now click the run button at the top left corner next to green screen maximize button. When prompted for a device type, select iPhone 7 for best performance. Note: Quizio will run on any device 6+ or higher, but the user interface will not be as glossy and may have cut corners.
 
-To run Quizio on a physical iPhone (iPhone 7 reccomended):
+To run Quizio on a physical iPhone (iPhone 7 recomended):
 
 First download the Xcode file project "FBLA". When opened, find and open the Xcode file project titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen maximize button. Attach your apple device running any iOS 10.0 or higher. Again, any iPhone lower than the X will run Quizio adequately. When promoted to select a device scroll and select your device's name. Ensure to accept any prompts that may pop up when running. Additionally if asked to trust the developer, go to Settings and then General. Scroll down to device management and trust the developer to enable permission to run Quizio on the device. 
 
