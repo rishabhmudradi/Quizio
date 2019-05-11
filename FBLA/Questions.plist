@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SponsorQuestions</key>
+	<dict>
+		<key>Questions</key>
+		<array>
+			<string>The Drip Drop is a sponsor for FBLA on a national level</string>
+			<string>Amazon is a sponsor for FBLA on a national level</string>
+			<string>Snapchat is a sponsor for FBLA on a national level</string>
+			<string>Wells Fargo is a sponsor for FBLA on a national level</string>
+			<string>Visa is a sponsor for FBLA on a national level</string>
+			<string>Facebook is a sponsor for FBLA on a national level</string>
+			<string>AT&amp;T is a sponsor for FBLA on a national level</string>
+			<string>Stock Market Game is a sponsor for FBLA on a national level</string>
+			<string>Pitsco is a sponsor for FBLA on a national level</string>
+			<string>My Path is a sponsor for FBLA on a national level</string>
+			<string>QuarkWorks is a sponsor for FBLA on a national level</string>
+			<string>Alamo is a sponsor for FBLA on a national level</string>
+			<string>Verizon is a sponsor for FBLA on a national level</string>
+			<string>FutureHack is a sponsor for FBLA on a national level</string>
+			<string>Reach and Teach is a sponsor for FBLA on a national level</string>
+			<string>Google is a sponsor for FBLA on a national level</string>
+			<string>PDC Productions is a sponsor for FBLA on a national level</string>
+			<string>Tesla is a sponsor for FBLA on a national level</string>
+			<string>Test Out is a sponsor for FBLA on a national level</string>
+			<string>Arizona State is a sponsor for FBLA on a national level</string>
+			<string>Walmart is a sponsor for FBLA on a national level</string>
+			<string>Stanford is a sponsor for FBLA on a national level</string>
+			<string>Instagram is a sponsor for FBLA on a national level</string>
+			<string>Brave Software is a sponsor for FBLA on a national level</string>
+			<string>Cengage is a sponsor for FBLA on a national level</string>
+		</array>
+		<key>IsTrue</key>
+		<array>
+			<false/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<true/>
+			<true/>
+			<false/>
+			<true/>
+			<true/>
+			<false/>
+			<true/>
+			<false/>
+			<true/>
+			<false/>
+			<true/>
+			<true/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<true/>
+		</array>
+	</dict>
+	<key>NatQuestions</key>
+	<dict>
+		<key>Questions</key>
+		<array>
+			<string>The 2019 NFLC Dates for all 3 cities all take place within 1 week of each other</string>
+			<string>The 2019 NFLC Dates for all 3 cities are all at least 1 day long</string>
+			<string>The 2019 NFLC at Washington DC is taking place from November 1 to 2</string>
+			<string>The 2019 NFLC at Washington DC is taking place from November 21 to 22</string>
+			<string>The 2019 NFLC at Washington DC is taking place from November 1 to 4</string>
+			<string>The 2019 NFLC at Denver, Colorado is taking place from November 15 to 16</string>
+			<string>The 2019 NFLC at Denver, Colorado is taking place from November 10 to 11</string>
+			<string>The 2019 NFLC at Birmingham, Alabama is taking place from November 8 to 9</string>
+			<string>The 2019 NFLC at Birmingham, Alabama is taking place from November 9 to 10</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Birmingham, Alabama</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Miami, Florida</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Salt Lake City, Utah</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Cupertino, California</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Washington DC</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Denver, Colorado</string>
+			<string>One of the 2019 National Fall Leadership conferences is taking place at Boston, Massachusetts</string>
+			<string>The National Leadership Conference takes place on June 22</string>
+			<string>It is possible to register on site for the National Leadership Conference</string>
+			<string>The National Leadership Conference starts on June 29</string>
+			<string>The National Leadership Conference starts on June 12</string>
+			<string>The National Leadership Conference starts on June 22</string>
+			<string>The regular registration deadline for NLC is June 10</string>
+			<string>The national conference 2020 is being held at Anaheim</string>
+			<string>The early bird registration rate ends on May 17th for  NLC</string>
+			<string>The national conference 2019 is being held at New York</string>
+		</array>
+		<key>IsTrue</key>
+		<array>
+			<true/>
+			<true/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<false/>
+			<true/>
+			<false/>
+			<true/>
+			<false/>
+			<false/>
+			<false/>
+			<true/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<true/>
+			<false/>
+			<false/>
+			<true/>
+			<false/>
+			<true/>
+			<false/>
+		</array>
+	</dict>
+</dict>
+</plist>

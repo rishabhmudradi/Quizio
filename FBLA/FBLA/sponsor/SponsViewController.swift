@@ -19,58 +19,62 @@ class SponsViewController: UIViewController {
     var correctQuestions = 0
     var indexOfSelectedQuestion: Int = 0
     
-    
-    let trivia: [[String : String]] = [
-        ["Question": " Arizona State is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Walmart is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Stanford is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Instagram is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Brave Software is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Cengage is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Test Out is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Tesla is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " PDC Productions is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Google is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Reach and Teach is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " FutureHack is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Verizon is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Alamo is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " My Path is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Pitsco is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Stock Market Game is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " At&t is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Facebook is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Alamo is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Visa is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " Wells Fargo is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Snapchat is a sponsor for FBLA on a national level", "Answer": "False"],
-        ["Question": " Amazon is a sponsor for FBLA on a national level", "Answer": "True"],
-        ["Question": " :The Drip Drop is a sponsor for FBLA on a national level", "Answer": "False"]
+    private var titleValueArray: NSArray!
+    private var subTitleArray: NSArray!
+    private var questionsValueArray: NSArray!
+    private var isTrueValueArray: NSArray!
 
-        
-        
-        
-        
-    ]
+
+
+    
     
     @IBOutlet weak var questionField: UILabel!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     @IBOutlet weak var playAgainButton: UIButton!
     
+   
+
+    var trivia: [[String : String]] = [
+
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
+        var nsDictionary: NSDictionary!
+        if let path = Bundle.main.path(forResource: "Questions", ofType: "plist") {
+            nsDictionary = NSDictionary(contentsOfFile: path)
+        }
+        if let array = nsDictionary[0] as? [String] {
+            print(array[0])
+        }*/
+        let dicRoot = NSDictionary.init(contentsOfFile: Bundle.main.path(forResource: "Questions", ofType: "plist")!)
+        let nextDict = dicRoot?.object(forKey: "SponsorQuestions")
+        let titleArrayFromDic: NSArray = NSArray.init(object: (nextDict as! NSDictionary).object(forKey: "Questions") as Any)
+        titleValueArray = titleArrayFromDic.object(at: 0) as! NSArray
+        
+        let subTitleArrayFromDic: NSArray = NSArray.init(object:(nextDict as! NSDictionary).object(forKey: "IsTrue") as Any)
+        subTitleArray = subTitleArrayFromDic.object(at: 0) as! NSArray
+        for count in 0..<titleValueArray.count {
+            trivia.append(["Question" : titleValueArray![count] as! String, "Answer": BoolToString(b: subTitleArray![count] as! Bool)])
+            
+        }
+        
         displayQuestion()
     }
-    
+    func BoolToString(b: Bool?)->String { return b?.description ?? "<None>"}
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    var prevIndex = 0
     func displayQuestion() {
         indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: trivia.count)
+        while(indexOfSelectedQuestion == prevIndex){
+            indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: trivia.count)
+        }
+        prevIndex = indexOfSelectedQuestion
         let questionDictionary = trivia[indexOfSelectedQuestion]
         questionField.text = questionDictionary["Question"]
         playAgainButton.isHidden = true
@@ -120,7 +124,7 @@ class SponsViewController: UIViewController {
         let selectedQuestionDict = trivia[indexOfSelectedQuestion]
         let correctAnswer = selectedQuestionDict["Answer"]
         
-        if (sender === trueButton &&  correctAnswer == "True") || (sender === falseButton && correctAnswer == "False") {
+        if (sender === trueButton &&  correctAnswer == "true") || (sender === falseButton && correctAnswer == "false") {
             correctQuestions += 1
             questionField.text = "Correct!"
         } else {
