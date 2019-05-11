@@ -20,37 +20,14 @@ class NatViewController: UIViewController {
     var indexOfSelectedQuestion: Int = 0
     
     
-    let trivia: [[String : String]] = [
-        ["Question": "The national conference 2019 is being held at New York ", "Answer": "False"],
-        ["Question": "The early bird registration rate ends on May 17th for  NLC", "Answer": "True"],
-        ["Question": "The national conference 2020 is being held at Anaheim ", "Answer": "False"],
-        ["Question": "The regular registration deadline for NLC is June 10 ", "Answer": "True"],
-        ["Question": "The National Leadership Conference starts on June 22", "Answer": "False"],
-        ["Question": "The National Leadership Conference starts on June 12", "Answer": "False"],
-        ["Question": "The National Leadership Conference starts on June 29", "Answer": "True"],
-        ["Question": "It is possible to register on site for the National Leadership Conference", "Answer": "True"],
-        ["Question": "The National Leadership Conference takes place on June 22", "Answer": "False"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Boston, Massachusetts", "Answer": "False"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Denver, Colorado", "Answer": "True"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Washington DC, Massachusetts", "Answer": "True"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Cupertino, California", "Answer": "False"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Salt Lake City, Utah", "Answer": "False"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Miami, Florida", "Answer": "False"],
-        ["Question": "One of the 2019 National Fall Leadership conferences is taking place at Birmingham, Alabama", "Answer": "True"],
-        ["Question": "The 2019 NFLC at Birmingham, Alabama is taking place from November 9 to 10", "Answer": "False"],
-        ["Question": "The 2019 NFLC at Birmingham, Alabama is taking place from November 8 to 9", "Answer": "True"],
-        ["Question": "The 2019 NFLC at Denver, Colorado is taking place from November 10 to 11", "Answer": "False"],
-        ["Question": "The 2019 NFLC at Denver, Colorado is taking place from November 15 to 16", "Answer": "True"],
-        ["Question": "The 2019 NFLC at Washington DC is taking place from November 1 to 4", "Answer": "False"],
-        ["Question": "The 2019 NFLC at Washington DC is taking place from November 21 to 22", "Answer": "False"],
-        ["Question": "The 2019 NFLC at Washington DC is taking place from November 1 to 2", "Answer": "True"],
-        ["Question": "The 2019 NFLC Dates for all 3 cities are all at least 1 day long", "Answer": "True"],
-        ["Question": "The 2019 NFLC Dates for all 3 cities all take place within 1 week of each other", "Answer": "True"]
-        
-        
-        
+     var trivia: [[String : String]] = [
+
 
     ]
+    
+    private var titleValueArray: NSArray!
+    private var subTitleArray: NSArray!
+
     
     @IBOutlet weak var questionField: UILabel!
     @IBOutlet weak var trueButton: UIButton!
@@ -60,20 +37,37 @@ class NatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let dicRoot = NSDictionary.init(contentsOfFile: Bundle.main.path(forResource: "Questions", ofType: "plist")!)
+        let nextDict = dicRoot?.object(forKey: "NatQuestions")
+        let titleArrayFromDic: NSArray = NSArray.init(object: (nextDict as! NSDictionary).object(forKey: "Questions") as Any)
+        titleValueArray = titleArrayFromDic.object(at: 0) as! NSArray
+        
+        let subTitleArrayFromDic: NSArray = NSArray.init(object:(nextDict as! NSDictionary).object(forKey: "IsTrue") as Any)
+        subTitleArray = subTitleArrayFromDic.object(at: 0) as! NSArray
+        for count in 0..<titleValueArray.count {
+            trivia.append(["Question" : titleValueArray![count] as! String, "Answer": BoolToString(b: subTitleArray![count] as! Bool)])
+            
+        }
+
         displayQuestion()
     }
-    
+    func BoolToString(b: Bool?)->String { return b?.description ?? "<None>"}
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    var prevIndex = 0
     func displayQuestion() {
         indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: trivia.count)
+        while(indexOfSelectedQuestion == prevIndex){
+            indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextInt(upperBound: trivia.count)
+        }
+        prevIndex = indexOfSelectedQuestion
         let questionDictionary = trivia[indexOfSelectedQuestion]
         questionField.text = questionDictionary["Question"]
         playAgainButton.isHidden = true
     }
-    
+
     func displayScore() {
         trueButton.isHidden = true
         falseButton.isHidden = true
@@ -118,7 +112,7 @@ class NatViewController: UIViewController {
         let selectedQuestionDict = trivia[indexOfSelectedQuestion]
         let correctAnswer = selectedQuestionDict["Answer"]
         
-        if (sender === trueButton &&  correctAnswer == "True") || (sender === falseButton && correctAnswer == "False") {
+        if (sender === trueButton &&  correctAnswer == "true") || (sender === falseButton && correctAnswer == "false") {
             correctQuestions += 1
             questionField.text = "Correct!"
         } else {
@@ -158,5 +152,3 @@ class NatViewController: UIViewController {
     }
     
 }
-
-

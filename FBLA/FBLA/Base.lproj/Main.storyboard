@@ -1346,10 +1346,10 @@
         <image name="m2" width="426" height="234"/>
         <image name="m3" width="426" height="234"/>
         <image name="m4" width="426" height="234"/>
-        <image name="more1" width="240" height="240"/>
+        <image name="more1" width="192" height="192"/>
         <image name="multp" width="1125" height="2001"/>
         <image name="nextQ" width="506" height="92"/>
-        <image name="notification" width="64" height="64"/>
+        <image name="notification" width="48" height="48"/>
         <image name="playAgain" width="506" height="92"/>
         <image name="post" width="520" height="108"/>
         <image name="question" width="171" height="171"/>
@@ -1366,8 +1366,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Scf-Ij-1B8"/>
-        <segue reference="OhY-lo-M7c"/>
-        <segue reference="cn7-XM-yUT"/>
+        <segue reference="54v-eL-umU"/>
+        <segue reference="B49-uC-vof"/>
         <segue reference="sAV-HR-tLV"/>
         <segue reference="3CV-xW-gPy"/>
     </inferredMetricsTieBreakers>

@@ -11,4 +11,5 @@ target 'FBLA' do
  pod 'Firebase/Auth'
  pod 'Firebase/Database'
  pod 'SwiftyJSON'
+ pod 'SwiftLint', '~> 0.27'
 end
