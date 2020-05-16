@@ -10,7 +10,7 @@ CONTENTS
  * Introduction
  * Requirements
  * Installation
- * Usage
+ * Software Used
  * Demo
  * Sources
  * Templates
@@ -64,7 +64,7 @@ SDKs
   - Firebase iOS SDK (https://firebase.google.com/docs/ios/setup)
 
 Other Assets
-  - Icons were provided from FlatIcoin (https://www.flaticon.com)
+  - Icons were provided from FlatIcon (https://www.flaticon.com)
 
 User Interface
   - All of our user interface was developed in sketch and imported into Xcode for usage.
@@ -85,7 +85,7 @@ Now click the run button at the top left corner next to green screen maximize bu
 When prompted for a device type, select iPhone 7 for best performance. Note: Quizio will run
 on any device 6+ or higher, but the user interface will not be as glossy and may have cut corners.
 
-To run Quizio on a physical iPhone (iPhone 7 reccomended):
+To run Quizio on a physical iPhone (iPhone 7 recomended):
 First download the Xcode file project "FBLA". When opened, find and open the Xcode file project 
 titled "FBLA.xcworkspace". When opened, click the run button at the top left corner next to screen
 maximize button. Again any iPhone lower than the X will run Quizio adequately. Again an iPhone 7 is recommended 
